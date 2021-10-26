@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Voiture
+--
+-id: Integer
+_-imatriculation: String
+-marque String
+-modele: String
+-icouleur String
+-nbPortes:Integer
+--
+Voiture()
++demmarrer(): void
++ouvrirePorte():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>156</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Vehicule
+--
+-id: Integer
+-imatriculation: String
+-marque String
+-modele: String
+-couleur String
+
+--
+Vehicule()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>318</x>
+      <y>30</y>
+      <w>84</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Comparable
+--
++compareTo(T): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Moto
+--
+-id: Integer
+-imatriculation: String
+-marque String
+-modele: String
+-couleur String
+-isBequille:Boolean
+--
+Voiture()
++demmarrer(): void
++obequiller():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>264</y>
+      <w>90</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>264</y>
+      <w>102</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>36</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Object
+--
+
+--
+toString(): String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>72</y>
+      <w>90</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>378</x>
+      <y>84</y>
+      <w>84</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>IControleTechnique
+--
++prendreRdv(): void
++passerCT(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>42</y>
+      <w>102</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>90</y>
+      <w>156</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>114</y>
+      <w>186</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Garage
+--
+-produits = new ArrayList&lt;T&gt;(): Collection&lt;T&gt;
+-config: Properties
+--
++Garage(): ctor
++toString(): String
++saveTxt(): void
++saveXML(): void
++saveCSV(): void
++saveJSON(): void
++saveSer(): void
++loadSer(): void
++ajouterProduit(T produit): void
++listerProduits(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
